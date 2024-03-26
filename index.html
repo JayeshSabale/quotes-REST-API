@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes API</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #007bff;
+        text-align: center;
+      }
+
+      p {
+        margin-bottom: 15px;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+      }
+
+      ul li a {
+        display: block;
+        padding: 5px 0;
+        margin-left: 15px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      ul li:last-child a {
+        border-bottom: none;
+      }
+
+      .note {
+        font-style: italic;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the Quotes API!</h1>
+      <p>This API provides access to a collection of quotes.</p>
+      <p>To get all quotes, you can make a GET request to:</p>
+      <p>
+        <a href="https://quotes-rest-api.onrender.com/api/quotes"
+          >https://quotes-rest-api.onrender.com/api/quotes</a
+        >
+      </p>
+      <p>To get a specific quote, you can make a GET request to:</p>
+      <p>
+        <a href="https://quotes-rest-api.onrender.com/api/quotes/authorName"
+          >https://quotes-rest-api.onrender.com/api/quotes/authorName</a
+        >
+      </p>
+      <p>Examples:</p>
+      <ul>
+        <li>
+          <a href="https://quotes-rest-api.onrender.com/api/quotes/Steve%20Jobs"
+            >https://quotes-rest-api.onrender.com/api/quotes/Steve%20Jobs</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://quotes-rest-api.onrender.com/api/quotes/Swami%20Vivekananda"
+            >https://quotes-rest-api.onrender.com/api/quotes/Swami%20Vivekananda</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://quotes-rest-api.onrender.com/api/quotes/Arnold%20Schwarzenegger"
+            >https://quotes-rest-api.onrender.com/api/quotes/Arnold%20Schwarzenegger</a
+          >
+        </li>
+      </ul>
+      <p>
+        For the following endpoints, use any API Testing tool like Postman,
+        Thunder Client, etc:
+      </p>
+      <ul>
+        <li>
+          <a href="#">https://quotes-rest-api.onrender.com/api/createNewQuote</a
+          >: Endpoint for creating a new quote.
+        </li>
+        <li>
+          <a href="#"
+            >https://quotes-rest-api.onrender.com/api/deleteAllQuotes</a
+          >: Endpoint for deleting all quotes.
+        </li>
+        <li>
+          <a href="#"
+            >https://quotes-rest-api.onrender.com/api/updateQuotePut/authorName</a
+          >: Endpoint for updating a quote using PUT method.
+        </li>
+        <li>
+          <a href="#"
+            >https://quotes-rest-api.onrender.com/api/updateQuotePatch/authorName</a
+          >: Endpoint for updating a quote using PATCH method.
+        </li>
+        <li>
+          <a href="#"
+            >https://quotes-rest-api.onrender.com/api/deleteSpecificQuote/authorName</a
+          >: Endpoint for deleting a specific quote.
+        </li>
+      </ul>
+      <p>Note: When specifying names in URLs, use "%20" to represent spaces.</p>
+
+      <p>
+        authorName: Steve Jobs, Steve Jobs_2, Steve Jobs_3, Swami Vivekananda,
+        Swami Vivekananda_2, Arnold Schwarzenegger, Arnold Schwarzenegger_2
+      </p>
+    </div>
+  </body>
+</html>
