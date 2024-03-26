@@ -1,3 +1,4 @@
+import path from 'path'
 import express from 'express'
 import dotenv from 'dotenv'
 dotenv.config()
@@ -8,8 +9,13 @@ const app = express()
 app.use(express.json())
 app.use(routes)
 
-app.get('/', (req,res) => {
-  res.send('visit https://quotes-rest-api.onrender.com/api/quotes  to get all quotes')
+// Define __dirname manually
+const __dirname = path.resolve()
+
+// Define route handler for the home route
+app.get('/', (req, res) => {
+  // Send the HTML file as the response
+  res.sendFile(path.join(__dirname, 'index.html'))
 })
 
 app.listen(process.env.PORT, () => {
